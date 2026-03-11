@@ -1,0 +1,21 @@
+Chapter 11: Mass-Storage Systems - Lab 10
+Topic 1: Overview of Mass Storage Structure
+
+Q1 (a) Analysis:
+The formula (cylinders * tracks_per_cylinder * sectors_per_track * bytes_per_sector)
+represents the total raw storage capacity of a Hard Disk Drive (HDD).
+
+Calculation:
+1024 cylinders * 16 tracks * 63 sectors * 512 bytes
+= 528,482,304 bytes
+≈ 504 MB
+
+Q1 (c) Difference between Track and Cylinder:
+
+Track: A single circular ring of data on one surface of one platter.
+
+Cylinder: A vertical stack of all tracks located at the same radial distance
+from the center across all surfaces/platters.
+
+Reading an entire cylinder is faster because it requires no mechanical "Seek"
+movement, only an electronic switch between the heads.

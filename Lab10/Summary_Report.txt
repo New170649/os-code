@@ -1,0 +1,15 @@
+[Q9 - REFLECTION]
+a) For Database Servers: RAID-10 (1+0) is best. It provides both mirroring for safety
+and striping for speed. RAID-0 is never used due to lack of safety.
+
+Summary of Lab 10:
+
+Error Correction: ECC is critical for bit-level reliability.
+
+RAID: Protects against entire drive failures.
+
+Swap Space: Essential for memory management under high load.
+
+Conclusion:
+Reliable storage requires multiple layers of protection, from bit-level ECC
+to drive-level RAID and system-level Swap management.

@@ -1,0 +1,18 @@
+Topic 3: NVM Scheduling
+
+Q3 (a) Why NVM does NOT require seek optimization:
+NVM (SSD/Flash) has no moving mechanical parts. There is no read/write head
+that needs to physically move (seek) across a spinning disk. Access time
+is almost uniform for any location (LBA), typically ~0.1ms.
+Therefore, complex algorithms like SSTF or SCAN provide no real benefit
+over simple FCFS.
+
+Q3 (c) Wear Leveling:
+NAND flash cells have a limited lifespan (10k - 100k writes).
+Wear Leveling is a technique used by the flash controller to distribute
+write operations evenly across all physical blocks.
+
+Simulation Logic:
+Instead of writing to the same physical location every time a logical block
+is updated, the controller maps the logical address to a physical block
+with the lowest "Write Count" to prevent premature wear-out of specific cells.
